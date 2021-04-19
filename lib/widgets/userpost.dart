@@ -60,7 +60,7 @@ class UserPost extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal:5.0),
+                    padding: EdgeInsets.symmetric(horizontal: 5.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -79,7 +79,7 @@ class UserPost extends StatelessWidget {
                                   );
                                 },
                                 child: Icon(
-                                   CupertinoIcons.chat_bubble,
+                                  CupertinoIcons.chat_bubble,
                                   size: 25.0,
                                 ),
                               ),
@@ -130,7 +130,7 @@ class UserPost extends StatelessWidget {
                           ],
                         ),
                         Visibility(
-                          visible: post.description!= null &&
+                          visible: post.description != null &&
                               post.description.toString().isNotEmpty,
                           child: Padding(
                             padding: const EdgeInsets.only(left: 5.0, top: 3.0),
@@ -148,9 +148,8 @@ class UserPost extends StatelessWidget {
                         SizedBox(height: 3.0),
                         Padding(
                           padding: const EdgeInsets.all(3.0),
-                          child: Text(
-                      timeago.format(post.timestamp.toDate()),style:TextStyle(fontSize:10.0)
-                    ),
+                          child: Text(timeago.format(post.timestamp.toDate()),
+                              style: TextStyle(fontSize: 10.0)),
                         ),
                         // SizedBox(height: 5.0),
                       ],
@@ -300,8 +299,7 @@ class UserPost extends StatelessWidget {
                   ),
                 ),
                 child: GestureDetector(
-                             onTap: () => showProfile(context, profileId: user?.id),
-
+                  onTap: () => showProfile(context, profileId: user?.id),
                   child: Padding(
                     padding: const EdgeInsets.only(left: 10.0),
                     child: Row(
@@ -332,7 +330,7 @@ class UserPost extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                             ),
                             Text(
-                              '${post.location == null ? 'Wooble' : post.location}',
+                              '${post.location == null ? 'My Mount Rushmore' : post.location}',
                               style: TextStyle(
                                 fontSize: 10.0,
                                 color: Color(0xff4D4D4D),
@@ -354,7 +352,7 @@ class UserPost extends StatelessWidget {
     );
   }
 
-showProfile(BuildContext context, {String profileId}) {
+  showProfile(BuildContext context, {String profileId}) {
     Navigator.push(
       context,
       CupertinoPageRoute(
@@ -363,5 +361,3 @@ showProfile(BuildContext context, {String profileId}) {
     );
   }
 }
-
-

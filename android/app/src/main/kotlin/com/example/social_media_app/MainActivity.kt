@@ -1,4 +1,4 @@
-package com.socio.social_media_app
+package com.Rushmore.social_media_app
 
 import io.flutter.embedding.android.FlutterActivity
 

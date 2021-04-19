@@ -8,6 +8,8 @@ import 'package:social_media_app/components/chat_bubble.dart';
 import 'package:social_media_app/models/enum/message_type.dart';
 import 'package:social_media_app/models/message.dart';
 import 'package:social_media_app/models/user.dart';
+import 'package:social_media_app/pages/notification.dart';
+import 'package:social_media_app/screens/mainscreen.dart';
 import 'package:social_media_app/utils/firebase.dart';
 import 'package:social_media_app/view_models/conversation/conversation_view_model.dart';
 import 'package:social_media_app/view_models/user/user_view_model.dart';
@@ -72,7 +74,8 @@ class _ConversationState extends State<Conversation> {
         appBar: AppBar(
           leading: GestureDetector(
             onTap: () {
-              Navigator.pop(context);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => TabScreen()));
             },
             child: Icon(
               Icons.keyboard_backspace,

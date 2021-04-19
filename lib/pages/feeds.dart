@@ -9,8 +9,7 @@ import 'package:social_media_app/utils/firebase.dart';
 import 'package:social_media_app/widgets/userpost.dart';
 
 class Timeline extends StatelessWidget {
-  
- final  GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
+  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +18,7 @@ class Timeline extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text(
-          'Wooble',
+          'My Mount Rushmore',
           style: TextStyle(fontWeight: FontWeight.w900),
         ),
         centerTitle: false,

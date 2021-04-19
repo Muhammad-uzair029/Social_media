@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:social_media_app/auth/login/login.dart';
 import 'package:social_media_app/auth/register/register.dart';
 import 'package:social_media_app/components/stream_builder_wrapper.dart';
 import 'package:social_media_app/components/stream_grid_wrapper.dart';
@@ -61,7 +62,7 @@ class _ProfileState extends State<Profile> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('WOOBLE'),
+        title: Text('My Mount Rushmore'),
         actions: [
           widget.profileId == firebaseAuth.currentUser.uid
               ? Center(
@@ -71,7 +72,7 @@ class _ProfileState extends State<Profile> {
                       onTap: () {
                         firebaseAuth.signOut();
                         Navigator.of(context).push(
-                            CupertinoPageRoute(builder: (_) => Register()));
+                            MaterialPageRoute(builder: (context) => Login()));
                       },
                       child: Text(
                         'Log Out',

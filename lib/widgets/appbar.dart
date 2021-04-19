@@ -3,11 +3,13 @@ import 'package:flutter_icons/flutter_icons.dart';
 
 AppBar header(context) {
   return AppBar(
-    title: Text('Wooble'),
+    title: Text('My Mount Rushmore'),
     centerTitle: true,
-    actions: [Padding(
-      padding: const EdgeInsets.only(right:20.0),
-      child: Icon(Feather.bell),
-    )],
+    actions: [
+      Padding(
+        padding: const EdgeInsets.only(right: 20.0),
+        child: Icon(Feather.bell),
+      )
+    ],
   );
 }

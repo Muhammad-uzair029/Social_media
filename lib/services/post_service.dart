@@ -19,10 +19,10 @@ class PostService extends Service {
     });
   }
 
-  uploadPost(File image, String location,
-      String description) async {
+  uploadPost(File image, String location, String description) async {
     String link = await uploadImage(posts, image);
-    DocumentSnapshot doc = await usersRef.doc(firebaseAuth.currentUser.uid).get();
+    DocumentSnapshot doc =
+        await usersRef.doc(firebaseAuth.currentUser.uid).get();
     user = UserModel.fromJson(doc.data());
     var ref = postRef.doc();
     ref.set({
@@ -32,7 +32,7 @@ class PostService extends Service {
       "ownerId": firebaseAuth.currentUser.uid,
       "mediaUrl": link,
       "description": description ?? "",
-      "location": location ?? "Wooble",
+      "location": location ?? "My Mount Rushmore",
       "timestamp": Timestamp.now(),
     }).catchError((e) {
       print(e);

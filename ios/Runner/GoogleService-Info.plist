@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>780820743732-sa6kk1rg2i8pk9m1j6fdf9pdv7tb6qhr.apps.googleusercontent.com</string>
+	<string>54061611217-2gq48u02i4mk654uhtn7egevbf2dlfri.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.780820743732-sa6kk1rg2i8pk9m1j6fdf9pdv7tb6qhr</string>
+	<string>com.googleusercontent.apps.54061611217-2gq48u02i4mk654uhtn7egevbf2dlfri</string>
 	<key>ANDROID_CLIENT_ID</key>
-	<string>780820743732-h8kvhuspqptk47fvvjih14m7qe4co2sh.apps.googleusercontent.com</string>
+	<string>54061611217-tbe1s18bife76q37ciue0i63klepk4uk.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCJapSwLL-Vz83bIh6sxjfpj4ff6-FbS8Y</string>
+	<string>AIzaSyCYFo9bTIbr5X30MZZdb71_ENJoaGeo1TE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>780820743732</string>
+	<string>54061611217</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.example.socialMediaApp</string>
 	<key>PROJECT_ID</key>
-	<string>social-app-e1319</string>
+	<string>my-mount-rushmore</string>
 	<key>STORAGE_BUCKET</key>
-	<string>social-app-e1319.appspot.com</string>
+	<string>my-mount-rushmore.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -31,8 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:780820743732:ios:4c4ee5caef03818b88ec61</string>
-	<key>DATABASE_URL</key>
-	<string>https://social-app-e1319.firebaseio.com</string>
+	<string>1:54061611217:ios:53ff8652f7134a64092df0</string>
 </dict>
 </plist>
