@@ -71,8 +71,10 @@ class _ProfileState extends State<Profile> {
                     child: GestureDetector(
                       onTap: () {
                         firebaseAuth.signOut();
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Login()));
+
+                        Navigator.of(context).pushAndRemoveUntil(
+                            MaterialPageRoute(builder: (context) => Login()),
+                            (Route<dynamic> route) => false);
                       },
                       child: Text(
                         'Log Out',
@@ -176,18 +178,24 @@ class _ProfileState extends State<Profile> {
                                                 ),
                                               );
                                             },
-                                            child: Column(
-                                              children: [
-                                                Icon(CupertinoIcons.settings,
-                                                    color: Theme.of(context)
-                                                        .accentColor),
-                                                Text(
-                                                  'settings',
-                                                  style:
-                                                      TextStyle(fontSize: 11.5),
-                                                )
-                                              ],
-                                            ),
+                                            child: Container(
+                                                margin:
+                                                    EdgeInsets.only(right: 70),
+                                                child: Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.end,
+                                                  children: [
+                                                    Icon(
+                                                        CupertinoIcons.settings,
+                                                        color: Theme.of(context)
+                                                            .accentColor),
+                                                    Text(
+                                                      'settings',
+                                                      style: TextStyle(
+                                                          fontSize: 11.5),
+                                                    )
+                                                  ],
+                                                )),
                                           )
                                         : buildLikeButton()
                                   ],
